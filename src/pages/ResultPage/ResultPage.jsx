@@ -27,17 +27,17 @@ function ResultPage() {
   }
 
   return (
-    <>
-      <h2>Result Page Placeholder</h2>
-      <ul>
+    <section className="result">
+      <h2 className="resultTitle">Results</h2>
+      <ul className = "list">
         {artworks.map((artwork) => (
           <li key={artwork.id}>
-            <h3>{artwork.title}</h3>
-            <RenderImage id={artwork.id} />
+            <h3 className= "list__title">{artwork.title}</h3>
+            <RenderImage className="list__image" id={artwork.id} />
           </li>
         ))}
       </ul>
-    </>
+    </section>
   );
 }
 
