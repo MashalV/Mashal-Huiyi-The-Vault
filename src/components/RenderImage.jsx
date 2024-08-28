@@ -1,5 +1,6 @@
 import axios from "axios"; 
 import { useState, useEffect } from "react";
+import './RenderImage.scss';
 
 function RenderImage( { id }) {
     console.log(id)
@@ -29,9 +30,15 @@ function RenderImage( { id }) {
 
     return (
         <>
-            <div>{label}</div>
-            <img src={image}/>
-            <div>{description}</div>
+            <div className="page">
+                <div className="page__sub">
+                    <img className = "page__img" src={image}/>
+                    <div className="page__text">
+                        <div className= "page__label">{label}</div>
+                        <div className ="page__details">{description}</div>
+                    </div>
+                </div>
+            </div>
             
         </> 
     );

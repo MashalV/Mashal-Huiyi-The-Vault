@@ -20,14 +20,14 @@ function HomePage() {
   };
 
   return (
-    <>
-      <div>
+    <section classname = "Homepage container">
+      <div className=''>
           <img src={Logo} className="logo react" alt="React logo" />
       </div>
-      <h2>Welcome to the Art Institute of Chicago!</h2>
+      <h2>Welcome to the Vault!</h2>
       <div className="card">
-        <form onSubmit= {handleSubmit}>
-            <input type="text" placeholder= "Search Some Art Work..." value ={search} onChange= {handleInputChange}/>
+        <form className="Search__form" onSubmit= {handleSubmit}>
+            <input type="text" placeholder= "Search" value ={search} onChange= {handleInputChange}/>
             <button>search</button>
         </form>
        
@@ -35,7 +35,7 @@ function HomePage() {
           Museum Visitors {count}
         </button>
       </div>
-    </>
+    </section>
   )
 }
 
