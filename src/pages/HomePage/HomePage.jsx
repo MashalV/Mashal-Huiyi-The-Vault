@@ -21,17 +21,17 @@ function HomePage() {
 
   return (
     <section classname = "Homepage container">
-      <div className=''>
+      <div>
           <img src={Logo} className="logo react" alt="React logo" />
       </div>
-      <h2>Welcome to the Vault!</h2>
+      <h2 className='Homepage__title'>Welcome to the Vault!</h2>
       <div className="card">
         <form className="Search__form" onSubmit= {handleSubmit}>
             <input type="text" placeholder= "Search" value ={search} onChange= {handleInputChange}/>
             <button>search</button>
         </form>
        
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button id='Visitor' onClick={() => setCount((count) => count + 1)}>
           Museum Visitors {count}
         </button>
       </div>
