@@ -1,0 +1,30 @@
+@use "/src/styles/global" as *;
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1rem 1rem 1rem;
+    width: 100%;
+    height:auto;
+    list-style: none;
+
+    &__title {
+      margin-bottom: 1rem;
+    }
+  }
+
+li{
+  padding: 2rem;
+}
+
+
+.resultTitle{
+    font-size: 1.2rem; /* Slightly larger for emphasis */
+    font-weight: 700; /* Bold font for the title */
+    color: #ffffff; /* White text for contrast */
+    background-color: #8c3f5d; /* Maroon background for the title */
+    padding: 0.5rem 1rem; /* Padding for better spacing */
+    border-radius: 4px; /* Rounded corners for a softer look */
+    margin-bottom: 1rem; /* Margin to separate from other elements */
+    text-align: center; /* Center the text */
+
+  }
